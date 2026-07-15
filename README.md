@@ -20,7 +20,7 @@ Everything happens locally when you're in Claude Code: it builds the HTML file n
 ## Install
 
 ```bash
-git clone https://github.com/<your-username>/claude-doc-studio.git ~/.claude/skills/md-experience
+git clone https://github.com/saimohan16/claude-doc-studio.git ~/.claude/skills/md-experience
 ```
 
 That's it — Claude Code picks up skills from `~/.claude/skills/` automatically. No dependencies beyond Python 3 (standard library only) and a browser.
