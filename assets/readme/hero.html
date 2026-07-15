@@ -17,7 +17,7 @@
     background:
       radial-gradient(1100px 500px at 50% -10%, #FFFFFF 0%, var(--paper) 60%);
     display:flex;flex-direction:column;align-items:center;
-    padding:44px 0 40px;
+    padding:34px 0 28px;
   }
   h1{
     font-family:var(--serif);
@@ -45,9 +45,12 @@
   .d-must{background:var(--must)}
   .d-skim{background:var(--skim)}
 
+  .frame-wrap{
+    margin-top:24px;width:100%;
+    display:flex;align-items:flex-start;justify-content:center;
+  }
   .frame{
-    margin-top:30px;
-    width:1360px;
+    width:1290px;
     border:1px solid var(--line);
     border-radius:14px;
     background:var(--surface);
@@ -55,12 +58,12 @@
     overflow:hidden;
   }
   .frame-bar{
-    height:30px;display:flex;align-items:center;gap:7px;
+    height:28px;display:flex;align-items:center;gap:7px;
     padding:0 16px;border-bottom:1px solid var(--line);
     background:var(--paper);
   }
   .frame-bar span{width:9px;height:9px;border-radius:50%;background:#CBD3D7}
-  .frame img{display:block;width:1360px;height:auto}
+  .frame img{display:block;width:1290px;height:auto}
 </style>
 </head>
 <body>
@@ -73,9 +76,11 @@
     <div class="callout"><span class="dot d-skim"></span>Edit and export</div>
   </div>
 
-  <div class="frame">
-    <div class="frame-bar"><span></span><span></span><span></span></div>
-    <img src="app-screenshot.png" alt="Claude Doc Studio interface">
+  <div class="frame-wrap">
+    <div class="frame">
+      <div class="frame-bar"><span></span><span></span><span></span></div>
+      <img src="app-screenshot.png" alt="Claude Doc Studio interface — focus map, edit and ask-Claude actions, and a live Ask Claude conversation">
+    </div>
   </div>
 </body>
 </html>
