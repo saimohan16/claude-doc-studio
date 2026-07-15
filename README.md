@@ -1,6 +1,6 @@
-# claude-doc-studio
-
-**A [Claude Code](https://claude.com/claude-code) skill that turns any markdown file into an interactive, guided review app — in one prompt.**
+<p align="center">
+  <img src="assets/readme/hero.png" alt="Claude Doc Studio — turn any Markdown into an interactive, guided review experience" width="100%">
+</p>
 
 Point Claude at a README, spec, or a whole docs folder and ask it to "walk me through this" or "review my README." It reads the doc, figures out what actually matters, and builds a self-contained HTML app — no separate tool to install, no config.
 

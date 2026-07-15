@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>hero</title>
+<style>
+  :root{
+    --paper:#F2F4F5; --surface:#FFFFFF; --ink:#1C2226; --ink-soft:#4A555E;
+    --line:#DDE3E6; --action:#155E63; --must:#D1495B; --skim:#EDAE49;
+    --serif:Charter,'Bitstream Charter','Sitka Text',Cambria,Georgia,serif;
+    --ui:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1600px;height:900px;overflow:hidden}
+  body{
+    font-family:var(--ui);
+    background:
+      radial-gradient(1100px 500px at 50% -10%, #FFFFFF 0%, var(--paper) 60%);
+    display:flex;flex-direction:column;align-items:center;
+    padding:44px 0 40px;
+  }
+  h1{
+    font-family:var(--serif);
+    font-size:52px;font-weight:700;letter-spacing:-0.01em;
+    color:var(--ink);
+    margin-top:2px;
+  }
+  h1 .accent{color:var(--action)}
+  p.tagline{
+    font-size:20px;color:var(--ink-soft);margin-top:10px;
+    max-width:720px;text-align:center;line-height:1.4;
+  }
+  .callouts{
+    display:flex;gap:14px;margin-top:26px;
+  }
+  .callout{
+    display:flex;align-items:center;gap:9px;
+    border:1px solid var(--line);background:var(--surface);
+    border-radius:999px;padding:9px 18px;
+    font-size:14.5px;color:var(--ink);font-weight:500;
+    box-shadow:0 1px 2px rgba(20,30,35,.04);
+  }
+  .dot{width:9px;height:9px;border-radius:50%;flex:none}
+  .d-action{background:var(--action)}
+  .d-must{background:var(--must)}
+  .d-skim{background:var(--skim)}
+
+  .frame{
+    margin-top:30px;
+    width:1360px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:var(--surface);
+    box-shadow:0 24px 60px rgba(20,30,35,.14), 0 4px 14px rgba(20,30,35,.06);
+    overflow:hidden;
+  }
+  .frame-bar{
+    height:30px;display:flex;align-items:center;gap:7px;
+    padding:0 16px;border-bottom:1px solid var(--line);
+    background:var(--paper);
+  }
+  .frame-bar span{width:9px;height:9px;border-radius:50%;background:#CBD3D7}
+  .frame img{display:block;width:1360px;height:auto}
+</style>
+</head>
+<body>
+  <h1>Claude <span class="accent">Doc Studio</span></h1>
+  <p class="tagline">Turn any Markdown into an interactive, guided review experience.</p>
+
+  <div class="callouts">
+    <div class="callout"><span class="dot d-action"></span>AI-powered focus map</div>
+    <div class="callout"><span class="dot d-must"></span>Guided review</div>
+    <div class="callout"><span class="dot d-skim"></span>Edit and export</div>
+  </div>
+
+  <div class="frame">
+    <div class="frame-bar"><span></span><span></span><span></span></div>
+    <img src="app-screenshot.png" alt="Claude Doc Studio interface">
+  </div>
+</body>
+</html>
